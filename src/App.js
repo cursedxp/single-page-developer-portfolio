@@ -3,10 +3,6 @@ import "./App.scss";
 function App() {
   return (
     <div className="App">
-      <header>
-        <div className="owner-name">adamkeyes</div>
-        <div className="social-media-links"></div>
-      </header>
       <main className="wrapper">
         <section className="profile">
           <div className="profile-picture">
