@@ -1,9 +1,13 @@
 import "./App.scss";
 
+//Components
+import Header from "./components/header.component";
+
 function App() {
   return (
     <div className="App">
       <main className="wrapper">
+        <Header />
         <section className="profile">
           <div className="profile-picture">
             <div className="ovals"></div>
