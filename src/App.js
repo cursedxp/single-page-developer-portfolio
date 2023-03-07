@@ -2,28 +2,14 @@ import "./App.scss";
 
 //Components
 import Header from "./components/header.component";
+import Profile from "./components/profile.component";
 
 function App() {
   return (
     <div className="App">
       <main className="wrapper">
         <Header />
-        <section className="profile">
-          <div className="profile-picture">
-            <div className="ovals"></div>
-            <img className="user-image" src="" alt="" />
-            <div className="circle"></div>
-          </div>
-          <div className="personal-information">
-            <h2>Nice to meet you! I'm Adam Keyes.</h2>
-            <p>
-              Based in the UK, I'm a front-end developer passionate about
-              building accessible web apps that users love.
-            </p>
-            <button>Contact me</button>
-          </div>
-        </section>
-
+        <Profile />
         <section className="skills">
           <div>
             <h3>HTML</h3>
