@@ -1,12 +1,88 @@
-@media screen and (max-width: 375px) {
+// Colors
+$black: rgb(21, 21, 21);
+$green: rgb(78, 255, 160);
+$dark-grey: rgb(36, 36, 36);
+$light-grey: rgb(217, 217, 217);
+$white: rgb(255, 255, 255);
+
+.wrapper {
+  position: relative;
+}
+
+@media (max-width: 375px) {
   header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
     padding-top: 20px;
     gap: 20px;
+    width: 100%;
     .owner-name {
       font-size: 24px;
       font-weight: 700;
       line-height: 32px;
       letter-spacing: -0.33px;
+    }
+    .social-media-links li {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .profile {
+    position: relative;
+    width: 100%;
+    .oval {
+      position: absolute;
+      left: -350px;
+      top: 126px;
+      width: 530px;
+      height: 129px;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .profile-image {
+      background-image: url("./images/image-profile-mobile.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 383px;
+      width: 174px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      .circle {
+        position: absolute;
+        bottom: 0px;
+        right: -165px;
+        width: 129px;
+        height: 129px;
+      }
+    }
+
+    .personal-information {
+      padding: 0 16px 80px 16px;
+      margin: 40px 0 0 0;
+      text-align: center;
+      h2 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -1.14px;
+      }
+      h2::after {
+        content: "";
+        position: absolute;
+        bottom: 255px;
+        right: 50px;
+        background-color: $green;
+        height: 4px;
+        width: 60%;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: $light-grey;
+        line-height: 26px;
+      }
     }
   }
 }
