@@ -3,6 +3,7 @@ import "./App.scss";
 //Components
 import Header from "./components/header.component";
 import Profile from "./components/profile.component";
+import Skills from "./components/skills.component";
 
 function App() {
   return (
@@ -10,33 +11,7 @@ function App() {
       <main className="wrapper">
         <Header />
         <Profile />
-        <section className="skills">
-          <div>
-            <h3>HTML</h3>
-            <p>4 Years Experience</p>
-          </div>
-          <div>
-            <h3>CSS</h3>
-            <p>4 Years Experience</p>
-          </div>
-          <div>
-            <h3>JavaScript</h3>
-            <p>4 Years Experience</p>
-          </div>
-          <div>
-            <h3>Accessibility</h3>
-            <p>4 Years Experience</p>
-          </div>
-          <div>
-            <h3>React</h3>
-            <p>3 Years Experience</p>
-          </div>
-          <div>
-            <h3>Sass</h3>
-            <p>3 Years Experience</p>
-          </div>
-        </section>
-
+        <Skills />
         <section className="projects">
           <div>
             <h2>Projects</h2>
