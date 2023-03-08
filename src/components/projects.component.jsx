@@ -23,8 +23,8 @@ export default function Projects() {
                 })}
               </div>
               <div className="project-buttons flex gap-4">
-                <a href="">View Project</a>
-                <a href="">View Code</a>
+                <a href="/">View Project</a>
+                <a href="/">View Code</a>
               </div>
             </div>
           );
