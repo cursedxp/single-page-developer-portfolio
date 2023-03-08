@@ -58,6 +58,9 @@ h3 {
 .justify-center {
   justify-content: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 
 .items-center {
   align-items: center;
@@ -85,19 +88,23 @@ ul {
 .gap-5 {
   gap: 32px;
 }
-
+a,
 button {
   font-size: 16px;
   text-transform: uppercase;
   line-height: 26px;
   letter-spacing: 2.29px;
+  border-bottom: 2px solid $green;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+button {
   background: none;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid $green;
-  padding-bottom: 10px;
 }
+
 button:hover {
   color: $green;
 }
