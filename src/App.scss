@@ -23,10 +23,12 @@ $white: rgb(255, 255, 255);
       line-height: 32px;
       letter-spacing: -0.33px;
     }
+
     .social-media-links li {
       width: 20px;
       height: 20px;
     }
+
     .social-media-links li a {
       border: none;
     }
@@ -159,7 +161,6 @@ $white: rgb(255, 255, 255);
     letter-spacing: -1.14px;
   }
   .contact {
-    border-bottom: 1px solid $light-grey;
     position: relative;
     background-color: $dark-grey;
     display: flex;
@@ -209,6 +210,20 @@ $white: rgb(255, 255, 255);
       height: 129px;
       overflow: hidden;
       z-index: 0;
+    }
+  }
+  footer {
+    padding: 40px 0px 80px 0px;
+    background-color: $dark-grey;
+    border-top: 1px solid $light-grey;
+    .owner-name {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: -0.33px;
+    }
+    .social-media-links li a {
+      border: none;
     }
   }
 }
