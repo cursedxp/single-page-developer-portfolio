@@ -125,12 +125,7 @@ $white: rgb(255, 255, 255);
     .section-title {
       margin-bottom: 40px;
     }
-    h2 {
-      font-size: 40px;
-      line-height: 40px;
-      font-weight: 700;
-      letter-spacing: -1.14px;
-    }
+
     .project-list {
       .project-img {
         width: 345px;
@@ -154,6 +149,66 @@ $white: rgb(255, 255, 255);
       .project-buttons {
         margin-bottom: 40px;
       }
+    }
+  }
+  .contact h2,
+  .projects h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: -1.14px;
+  }
+  .contact {
+    border-bottom: 1px solid $light-grey;
+    position: relative;
+    background-color: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 60px 16px 87px 16px;
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      color: $light-grey;
+      margin-bottom: 50px;
+    }
+    form {
+      textarea,
+      input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $light-grey;
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+      textarea::placeholder,
+      input::placeholder {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.22px;
+      }
+      textarea {
+        z-index: 1;
+        height: 130px;
+      }
+      button {
+        margin-top: 16px;
+      }
+    }
+    .oval {
+      position: absolute;
+      left: -350px;
+      bottom: 100px;
+      width: 530px;
+      height: 129px;
+      overflow: hidden;
+      z-index: 0;
     }
   }
 }
