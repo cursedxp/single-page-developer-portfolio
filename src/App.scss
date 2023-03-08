@@ -85,4 +85,32 @@ $white: rgb(255, 255, 255);
       }
     }
   }
+  .skills {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0px 16px 0px 16px;
+    padding: 40px 0px 40px 0px;
+    border-top: 2px solid $light-grey;
+    border-bottom: 2px solid $light-grey;
+    h3 {
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      font-weight: 700;
+    }
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: $light-grey;
+    }
+    .oval {
+      position: absolute;
+      right: -357px;
+      bottom: -48px;
+    }
+  }
 }
