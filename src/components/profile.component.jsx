@@ -1,7 +1,7 @@
 import cirle from "../images/pattern-circle.svg";
 import oval from "../images/pattern-rings.svg";
 
-export default function Profile(params) {
+export default function Profile() {
   return (
     <section className="profile">
       <img className="oval" src={oval} alt="" />
