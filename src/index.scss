@@ -78,3 +78,23 @@ ul {
 .gap-4 {
   gap: 24px;
 }
+
+.gap-5 {
+  gap: 32px;
+}
+
+button {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid $green;
+  padding-bottom: 10px;
+}
+button:hover {
+  color: $green;
+}
