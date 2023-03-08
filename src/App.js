@@ -4,6 +4,7 @@ import "./App.scss";
 import Header from "./components/header.component";
 import Profile from "./components/profile.component";
 import Skills from "./components/skills.component";
+import Projects from "./components/projects.component";
 
 function App() {
   return (
@@ -12,27 +13,7 @@ function App() {
         <Header />
         <Profile />
         <Skills />
-        <section className="projects">
-          <div>
-            <h2>Projects</h2>
-            <button>Contact me</button>
-          </div>
-          <div className="project-list">
-            <div className="project">
-              <img className="project-img" src="" alt="" />
-              <div className="project-name">Design portfolio</div>
-              <div className="project-tech">
-                <div className="tech">HTML</div>
-                <div className="tech">Css</div>
-              </div>
-              <div className="project-buttons">
-                <button>View Project</button>
-                <button>View Code</button>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        <Projects />
         <section>
           <div>
             <h3>Contact</h3>
