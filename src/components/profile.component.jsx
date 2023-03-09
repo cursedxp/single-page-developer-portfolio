@@ -8,7 +8,7 @@ export default function Profile() {
       <div className="profile-image">
         <img className="circle" src={cirle} alt="" />
       </div>
-      <div className="personal-information flex column items-center gap-5">
+      <div className="personal-information">
         <h2>Nice to meet you! I'm Adam Keyes.</h2>
         <p>
           Based in the UK, I'm a front-end developer passionate about building
