@@ -7,7 +7,7 @@ import twitter from "../images/icon-twitter.svg";
 export default function Footer() {
   return (
     <footer>
-      <div className="footer-wrapper flex column justify-center items-center gap-4">
+      <div className="footer-wrapper ">
         <div className="owner-name">adamkeyes</div>
         <ul className="social-media-links flex items-center gap-4">
           <li>
