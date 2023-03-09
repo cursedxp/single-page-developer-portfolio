@@ -111,3 +111,37 @@ button {
 button:hover {
   color: $green;
 }
+form {
+  width: 100%;
+  textarea,
+  input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $light-grey;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  textarea::placeholder,
+  input::placeholder {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.22px;
+  }
+  textarea {
+    z-index: 1;
+    height: 130px;
+  }
+  button {
+    margin-top: 16px;
+  }
+  p.succes-message {
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 26px;
+    color: $green;
+    border: 1px solid $green;
+    padding: 24px;
+  }
+}
