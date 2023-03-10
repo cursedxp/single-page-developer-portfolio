@@ -26,9 +26,7 @@ export default function Skills() {
         <h3>Sass</h3>
         <p>3 Years Experience</p>
       </div>
-      <div>
-        <img className="oval" src={oval} alt="" />
-      </div>
+      <img className="oval" src={oval} alt="" />
     </section>
   );
 }
