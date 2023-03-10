@@ -14,15 +14,23 @@ export default function Contact() {
     //Form validation control
     if (!name.trim()) {
       errors.name = "Name is required";
+      const inputName = document.querySelector('input[name = "name"]');
+      inputName.style.borderBottom = "1px solid #FF6F5B";
     }
     if (!email.trim()) {
       errors.email = "Email is required ";
+      const inputEmail = document.querySelector('input[name = "email"]');
+      inputEmail.style.borderBottom = "1px solid #FF6F5B";
       //Email format check
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
+    } else if (
+      !/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/.test(email)
+    ) {
       errors.email = "Email is invalid";
     }
     if (!message.trim()) {
       errors.message = "Message is required";
+      const inputMessage = document.querySelector('textarea[name = "message"]');
+      inputMessage.style.borderBottom = "1px solid #FF6F5B";
     }
 
     if (Object.keys(errors).length === 0) {
@@ -51,7 +59,18 @@ export default function Contact() {
             setName(e.target.value);
           }}
         />
-        {errors.name && <p className="error">{errors.name}</p>}
+        {errors.name && (
+          <p
+            className="error"
+            style={{
+              fontSize: "12px",
+              color: "#FF6F5B",
+              textAlign: "right",
+            }}
+          >
+            {errors.name}
+          </p>
+        )}
         <br />
         <input
           type="email"
@@ -62,7 +81,18 @@ export default function Contact() {
             setEmail(e.target.value);
           }}
         />
-        {errors.email && <p className="error">{errors.email}</p>}
+        {errors.email && (
+          <p
+            className="error"
+            style={{
+              fontSize: "12px",
+              color: "#FF6F5B",
+              textAlign: "right",
+            }}
+          >
+            {errors.email}
+          </p>
+        )}
         <br />
         <textarea
           name="message"
@@ -75,7 +105,18 @@ export default function Contact() {
             setMessage(e.target.value);
           }}
         ></textarea>
-        {errors.message && <p className="error">{errors.message}</p>}
+        {errors.message && (
+          <p
+            className="error"
+            style={{
+              fontSize: "12px",
+              color: "#FF6F5B",
+              textAlign: "right",
+            }}
+          >
+            {errors.message}
+          </p>
+        )}
         <br />
         <div className="flex justify-end">
           <button type="submit">Send Message</button>
