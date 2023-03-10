@@ -32,7 +32,7 @@ header {
   position: relative;
   display: flex;
   width: 100%;
-  justify-content: end;
+  justify-content: flex-end;
   margin-bottom: 104px;
 
   .oval {
@@ -426,7 +426,7 @@ footer {
     }
   }
   .profile {
-    justify-content: end;
+    justify-content: flex-end;
     .oval {
       left: -265px;
       top: 80px;
