@@ -137,11 +137,32 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     .project-img {
+      position: relative;
       width: 540px;
       height: 400px;
       margin-bottom: 20px;
       background-size: cover;
       background-position: center;
+
+      .hoverButtons {
+        position: absolute;
+        display: none;
+        top: 0px;
+        left: 0px;
+        width: 540px;
+        height: 400px;
+        background-color: rgba(36, 36, 36, 0.8);
+        height: 100%;
+      }
+    }
+
+    .project-img:hover .hoverButtons.hoverButtons {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
     }
     .project-name {
       margin-bottom: 7px;
@@ -350,6 +371,10 @@ footer {
         width: 345px;
         height: 253px;
         margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .project-img:hover .hoverButtons.hoverButtons {
+        display: none;
       }
       .project-name {
         margin-bottom: 14px;
@@ -502,6 +527,10 @@ footer {
         width: 342px;
         height: 253px;
         margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .project-img:hover .hoverButtons.hoverButtons {
+        display: none;
       }
       .project-name {
         margin-bottom: 7px;

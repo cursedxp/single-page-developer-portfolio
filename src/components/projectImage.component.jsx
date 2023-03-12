@@ -7,6 +7,12 @@ export default function ProjectImage(props) {
         backgroundImage: `url(${url})`,
       }}
       alt={alt || "Project Image"}
-    ></div>
+    >
+      {props.children}
+      <div className="hoverButtons ">
+        <a href="/">View Project</a>
+        <a href="/">View Code</a>
+      </div>
+    </div>
   );
 }
